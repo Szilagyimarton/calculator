@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root{
+ background-color: rgb(155, 174, 174);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.calculator{
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(3, 40, 119);
+  padding: 10px;
+
+  background-color:  rgb(3, 19, 54);
+}
+.output{
+  background-color:rgb(0, 0, 0) ;
+
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  font-size: 2rem;
+  color: white;
+  border-radius: 10%;
+
+}
+.previousOp{
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+.digits{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+
+}
+.digits-row{
+  display: flex;
+  height: 100%;
+  max-height: 125px;
+ 
+}
+.double{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-height: 100px;
+}
+.double button{
+  max-width: 250px;
+  width: 100%;
+  font-size: 2rem;
+  background-color: rgb(3, 40, 119);
+  border: none;
+  border-radius: 10%;
+  padding:  5px;
+  margin: 5px;
+  color: white;
+
+}
+.digits-row  button{
+   max-width: 125px;
+   width: 100%;
+   font-size: 2rem;
+   background-color:rgb(3, 40, 119);
+   color: white;
+   border: none;
+   border-radius: 10%;
+   margin: 5px;
+
+} 
+.digits-row  button:hover,.double button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
